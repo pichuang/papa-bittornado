@@ -1,0 +1,8 @@
+[Unit]
+Description=NCTU CSCC Bittorrent tracker
+
+[Service]
+ExecStart=/usr/bin/bttrack.py --port 6881 --dfile /var/log/bittornado/dstate.log --logfile /var/log/bittornado/bttracker.log
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+TORRENT_PATH=/srv/http/bt/
+GET_SERVER_IP=$(ifconfig|sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
+
+if [ "$1" != "" ] && [ "$2" != "" ]; then
+
+    #/usr/bin/btmakemetafile.py http://"$2":6881/announce $1 > /dev/null 2>&1
+    /usr/bin/btmakemetafile.py http://"$2":6881/announce $1 
+    
+    if [ "$?" -ne 0 ]; then
+        echo "Wrong filename, or no permission to write file."
+    else
+        echo "Generate "$1".torrent Successful!"
+        echo
+        echo "if you want to upload file, Use \"papa-btdownloadcurses\""
+    fi
+else
+    echo "Help: cs-btmakemetafile <filename> <tracker ip>"
+fi
