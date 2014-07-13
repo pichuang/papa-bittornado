@@ -19,7 +19,7 @@ source=("http://download2.bittornado.com/download/BitTornado-${pkgver}.tar.gz"
 md5sums=('faeb137036cfaaeab91afc7f62c7dc30'
          '3dbe56e749bc30d8ed6a23df965b029d'
          '85b0b5923e62aa2a6b07707d952b7bf6'
-         'a5352377e75150c64e282f34e3c77bfb')
+         '3a2704a20995cfede0b832d699a30d1f')
 
 package() {
   cd "${srcdir}/BitTornado-CVS"
