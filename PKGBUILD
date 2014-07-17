@@ -4,7 +4,7 @@
 _pkgname=bittornado
 pkgname=papa-${_pkgname}
 pkgver=0.3.18
-pkgrel=1
+pkgrel=2
 pkgdesc="An experimental client based on the official bittorrent"
 arch=('any')
 url="http://bittornado.com/"
@@ -18,8 +18,8 @@ source=("http://download2.bittornado.com/download/BitTornado-${pkgver}.tar.gz"
         'papa-btdownloadcurses')
 md5sums=('faeb137036cfaaeab91afc7f62c7dc30'
          '3dbe56e749bc30d8ed6a23df965b029d'
-         '85b0b5923e62aa2a6b07707d952b7bf6'
-         '3a2704a20995cfede0b832d699a30d1f')
+         '848e0604bbea10d4ced62d661e4e4502'
+         'a11b5d7bf66bac85143397b8ada21e93')
 
 package() {
   cd "${srcdir}/BitTornado-CVS"

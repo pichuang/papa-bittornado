@@ -3,5 +3,5 @@
 if [ "$1" != "" ]; then
     /usr/bin/btdownloadcurses.py --minport 10000 --maxport 11000 "$1".torrent --saveas $1
 else
-    echo "Help: cs-btdownloadcurses <filename>"
+    echo "Help: papa-btdownloadcurses <filename>"
 fi
