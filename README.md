@@ -6,4 +6,4 @@ PAPA-Bittornado
 * Add papa-btmakemetafile
   * papa-btmakemetafile <filename> <tracker ip>
 * Add papa-btdownloadcurses
-  * papa-btdownloadcurses <filename>
+  * papa-btdownloadcurses <filenames>
